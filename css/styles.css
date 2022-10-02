@@ -192,7 +192,7 @@ a {
     padding-bottom: 94px;
  }
 
- .card {
+ .command-list__item {
     background-color: var(--primary-background-color);
  }
 
@@ -394,10 +394,16 @@ a {
    margin-bottom: 0;
  }
 
- .command-heading {
-   margin-left: auto;
-   margin-right: auto
+ .command-section__heading {
    margin-bottom: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   font-weight: 700px;
+   font-size: 36px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
+   
  }
 
  .command-list {
@@ -479,7 +485,7 @@ a {
    padding-bottom: 30px;
 }
 
-.command-list > .card:not(:last-child) {
+.command-list__item:not(:last-child) {
    margin-right: 30px;
 }
 
@@ -584,7 +590,7 @@ a {
    justify-content: center;
    padding-left: 0;
 }
-.command-list > .card {
+.command-list__item {
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
