@@ -288,7 +288,7 @@ a {
    color:var(--accent-color);
  }
 
- .features-container__visually-hidden {
+ .features-section__visually-hidden {
    position: absolute;
    white-space: nowrap;
    width: 1px;
