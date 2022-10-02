@@ -173,7 +173,7 @@ a {
     letter-spacing: 0.03em;
  }
 
- .headings {
+ .work-section__heading {
    margin-bottom: 50px;
    margin-left: auto;
    margin-right: auto;
@@ -522,11 +522,11 @@ a {
    padding-bottom: 94px;
 }
 
-.work-item:not(:last-child) {
+.work-list__item:not(:last-child) {
    margin-right: 30px;
 }
 
-.work-image {
+.work-div {
    position: relative;
 }
 
@@ -756,7 +756,7 @@ a {
    background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-paragraph {
+.work-description__paragraph {
    font-weight: 700;
    font-size: 14px;
    line-height: 1.2;
