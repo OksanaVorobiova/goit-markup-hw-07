@@ -196,7 +196,7 @@ a {
     background-color: var(--primary-background-color);
  }
 
- .name {
+ .member-description__name {
     margin-bottom: 10px;
     margin-top: 0;
     font-weight: 500;
@@ -205,7 +205,7 @@ a {
     letter-spacing: 0.03em;
  }
 
- .description>p {
+ .member-description__paragraph {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--primary-paragraph-color);
@@ -480,9 +480,10 @@ a {
    margin-right: 30px;
 }
 
-.description {
+.member-description {
    text-align: center;
    padding-bottom: 30px;
+   padding-top: 30px;
 }
 
 .command-list__item:not(:last-child) {
@@ -586,16 +587,13 @@ a {
 
 /* command */
 .social-list {
+   display: flex;
    margin-top: 16px;
    justify-content: center;
    padding-left: 0;
 }
 .command-list__item {
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.social-list {
-   display: flex;
 }
 
 .social-div {
