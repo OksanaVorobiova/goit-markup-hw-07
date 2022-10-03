@@ -34,6 +34,16 @@ a {
    display: inline-block;
 }
 
+li {
+   list-style-type: none;
+   margin-bottom: 0;
+}
+
+section {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
 .list {
    padding: 0;
    margin: 0;
@@ -56,7 +66,6 @@ a {
 }
 
 .header {
-    background-color: var(--primary-background-color);
     border-bottom: 1px solid #eeeeee;
     margin-bottom: 0;
 }
@@ -86,7 +95,12 @@ a {
 .navigation-list__link:hover,
 .navigation-list__link:focus,
 .contact-list__link:hover,
-.contact-list__link:focus{
+.contact-list__link:focus,
+.address__location:hover,
+.address__location:focus, 
+.address__contact:hover,
+.address__contact:focus,
+.modal-form__contract {
     color: var(--accent-color);
 }
 
@@ -114,11 +128,6 @@ a {
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* all lists */
-
- li {
-    list-style-type:none;
-    margin-bottom: 0;
- }
  
  /* hero */
  .hero-section {
@@ -284,11 +293,6 @@ a {
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
  }
 
- .address__location:hover,
- .address__location:focus {
-   color: var(--accent-color);
- }
-
  .address__contact:hover,
  .address__contact:focus {
    color:var(--accent-color);
@@ -380,21 +384,14 @@ a {
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .features-list {
-   display: flex;
- }
-
  .features-list__item {
    width: 270px;
  } 
  
- .work-list {
+ .work-list,
+ .features-list,
+ .command-list {
    display: flex;
- }
-
- section {
-   margin-top: 0;
-   margin-bottom: 0;
  }
 
  .command-section__heading {
@@ -407,10 +404,6 @@ a {
    line-height: 1.2;
    letter-spacing: 0.03em;
    
- }
-
- .command-list {
-   display: flex;
  }
 
  .logo-footer {
@@ -447,20 +440,13 @@ a {
    margin-right: 344px;
 }
 
-.contact-list {
-   display: flex;
-   align-items: center;
-}
-
+.contact-list__item:not(:last-child),
 .navigation-list__item:not(:last-child) {
    margin-right: 48px;
 }
 
-.contact-list__item:not(:last-child) {
-   margin-right: 48px;
-}
-
-.container--flex {
+.container--flex,
+.contact-list {
    display: flex;
    align-items: center;
 }
@@ -1136,10 +1122,6 @@ a {
 
 .modal-form__input--checkbox:checked .modal-form__icon--check {
    opacity: 1;
-}
-
-.modal-form__contract {
-   color: var(--accent-color);
 }
 
 
