@@ -201,8 +201,6 @@ section {
 
  .command-section {
     background-color: var(--button-background);
-    padding-top: 94px;
-    padding-bottom: 94px;
  }
 
  .command-list__item {
@@ -322,7 +320,10 @@ section {
  }
 
  .portfolio-link:hover,
- .portfolio-link:focus {
+ .portfolio-link:focus,
+ .command-list__item,
+ .footer-button:hover,
+ .footer-button:focus-within {
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
  }
 
@@ -384,7 +385,8 @@ section {
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .features-list__item {
+ .features-list__item,
+ .features-div {
    width: 270px;
  } 
  
@@ -408,8 +410,7 @@ section {
 
  .logo-footer {
    display: block;
-   margin-bottom: 20px;
-   
+   margin-bottom: 20px; 
  }
 
  .address__contact {
@@ -451,11 +452,14 @@ section {
    align-items: center;
 }
 
-.navigation-list li {
+.navigation-list__item {
    padding: 32px, 0;
 }
 
-.features-list__item:not(:last-child) {
+.features-list__item:not(:last-child),
+.command-list__item:not(:last-child),
+.work-list__item:not(:last-child),
+.client-list__item:not(:last-child) {
    margin-right: 30px;
 }
 
@@ -463,14 +467,6 @@ section {
    text-align: center;
    padding-bottom: 30px;
    padding-top: 30px;
-}
-
-.command-list__item:not(:last-child) {
-   margin-right: 30px;
-}
-
-.filter.marketing {
-   margin-right: 0;
 }
 
 .card-list__item {
@@ -496,21 +492,16 @@ section {
    border-top: none;
 }
 
-.navigation {
-   margin-left: 93px;
-}
-
-.features-section {
+.features-section,
+.command-section,
+.filter-section,
+.clients {
    padding-top: 94px;
    padding-bottom: 94px;
 }
 
 .work-section {
    padding-bottom: 94px;
-}
-
-.work-list__item:not(:last-child) {
-   margin-right: 30px;
 }
 
 .work-div {
@@ -520,11 +511,6 @@ section {
 .description {
    padding-top: 30px;
    padding-bottom: 30px;
-}
-
-.filter-section {
-   padding-top: 94px;
-   padding-bottom: 94px;
 }
 
 .container-footer {
@@ -547,14 +533,16 @@ section {
 }
 
 .contact-list__link:hover .contact-list__icon,
-.contact-list__link:focus .contact-list__icon  {
+.contact-list__link:focus .contact-list__icon,
+.modal-close:hover .modal-close__use,
+.client-link:hover>.client-link__logo,
+.client-link:focus>.client-link__logo {
    fill: var(--accent-color);
 }
 
 /*features*/
 .features-div {
    margin-bottom: 30px;
-   width: 270px;
    height: 120px;
    background-color: var(--button-background);
    border: none;
@@ -571,9 +559,6 @@ section {
    margin-top: 16px;
    justify-content: center;
    padding-left: 0;
-}
-.command-list__item {
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .social-link {
@@ -607,21 +592,13 @@ section {
 }
 
 .social-link__card:hover,
-.social-link__card:focus {
-   fill: var(--primary-background-color);
-}
-
-.social-link:hover .social-link__card, 
+.social-link__card:focus,
+.social-link:hover .social-link__card,
 .social-link:focus .social-link__card {
    fill: var(--primary-background-color);
 }
 
-
 /* Clients */
-.clients {
-   padding-top: 94px;
-   padding-bottom: 94px;
-}
 
 .clients__heading {
    margin-left: auto;
@@ -652,18 +629,9 @@ section {
    
 }
 
-.client-list__item:not(:last-child) {
-   margin-right: 30px;
-}
-
 .client-link:hover,
 .client-link:focus {
-   border-color: #2196f3;
-}
-
-.client-link:hover > .client-link__logo,
-.client-link:focus > .client-link__logo {
-   fill: #2196f3;
+   border-color: var(--accent-color);
 }
 
 .client-link__logo {
@@ -935,11 +903,6 @@ section {
    transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-button:hover,
-.footer-button:focus-within {
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 .footer-button__use {
    fill: var(--primary-background-color);
 }
@@ -948,7 +911,8 @@ section {
    margin-left: 10px;
 }
 
-.footer-form {
+.footer-form,
+.navigation {
    display: flex;
    align-items: flex-end;
    width: 573px;
@@ -1067,10 +1031,6 @@ section {
 .modal-form__textarea:focus {
    border-color: var(--accent-color);
    outline: var(--accent-color);
-}
-
-.modal-close__button:hover .modal-close__use {
-   fill: var(--accent-color);
 }
 
 .modal-form__button:hover,
