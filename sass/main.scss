@@ -1,2 +1,31 @@
 @import "./utils/normalize";
 @import "./utils/variables.scss";
+@import "./utils/placeholders";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $primaryColor;
+    color:$headingColor;
+    font-family: Roboto, sans-serif;
+}
+
+.list {
+    @extend %list;
+}
+
+.image {
+    display: block;
+}
+
+.section {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@import "./components/page-header";
+@import "./components/util-classes/logo";
+@import "./components/util-classes/navigation";

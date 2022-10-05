@@ -2,8 +2,7 @@
     --primary-background-color: #ffffff;
     --primary-heading-color: #212121;
     --accent-color: #2196f3;
-    --primary-paragraph-color: #757575;
-    --container-bg: #eeeeee; 
+    --primary-paragraph-color: #757575; 
     --button-background: #f5f4fa; 
     --background-color: #2f303a;
     --contacts-footer: #d9d9d9; 
@@ -50,8 +49,7 @@ section {
 }
 
 /* header */
-.logo,
-.logo__studio {
+.logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -61,7 +59,7 @@ section {
     letter-spacing: 0.03em;
 }
 
-.logo__studio--black {
+.logo--black {
     color: #000000;
 }
 
@@ -234,7 +232,7 @@ section {
    background-color: var(--background-color);
  }
 
- .logo--footer {
+ .logo--white {
     color: var(--primary-background-color);
     letter-spacing: 0.03em;
  }
@@ -356,7 +354,7 @@ section {
    margin-right: auto;
 }
 
- .logo--header {
+ .logo-header {
    box-sizing: border-box;
    display: inline-block;
    margin-top: 24px;
