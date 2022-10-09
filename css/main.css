@@ -268,8 +268,8 @@ summary {
   margin-right: auto;
   border: none;
   border-radius: 4px;
-  background-color: var(--accent-color);
-  color: var(--primary-background-color);
+  background-color: #2196f3;
+  color: #fff;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
