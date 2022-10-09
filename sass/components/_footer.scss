@@ -1,0 +1,18 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footerBg;
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.address__list {
+    @extend %list;
+}
+
+.address__item {
+    @extend %item;
+}

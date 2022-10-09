@@ -281,12 +281,12 @@ summary {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__item, .work-list__item, .features-list__item, .navigation-list__item, .contact-list__item {
+.client-list__item, .social-list__item, .work-list__item, .features-list__item, .navigation-list__item, .contact-list__item {
   list-style-type: none;
   margin-bottom: 0;
 }
 
-.social-list, .command-list, .work-list, .features-list, .navigation-list, .contact-list {
+.client-list, .social-list, .command-list, .work-list, .features-list, .navigation-list, .contact-list {
   padding: 0;
   margin: 0;
 }
@@ -319,16 +319,16 @@ summary {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link, .contact-list__icon {
+.client-link, .social-link, .contact-list__icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command-section, .work-section, .features-section {
+.clients, .command-section, .work-section, .features-section {
   margin: 0 0;
 }
 
-.command-section__heading, .work-section__heading {
+.clients__heading, .command-section__heading, .work-section__heading {
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -339,7 +339,7 @@ summary {
   letter-spacing: 0.03em;
 }
 
-.social-link__card {
+.client-link__logo, .social-link__card {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -676,4 +676,36 @@ body {
 }
 .social-link__card:hover, .social-link__card:focus {
   fill: #fff;
+}
+
+.client-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-property: border-color, fill;
+}
+.client-link:hover > .client-link__logo, .client-link:focus > .client-link__logo {
+  fill: #2196f3;
+}
+.client-link:hover, .client-link:focus {
+  border-color: #2196f3;
+}
+.client-link > .client-link__use:hover, .client-link > .client-link__use:focus {
+  border-color: transparent;
+}
+
+.client-link__logo {
+  fill: #afb1b8;
+  margin: 16px 32px;
 }/*# sourceMappingURL=main.css.map */
