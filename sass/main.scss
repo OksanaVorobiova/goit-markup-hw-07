@@ -34,6 +34,10 @@ body {
     margin: -1px;
 }
 
+.button {
+    @extend %button;
+}
+
 @import "./components/page-header";
 @import "./components/util-classes/logo";
 @import "./components/util-classes/navigation";
@@ -42,3 +46,4 @@ body {
 @import "./components/work-section";
 @import "./components/command-section";
 @import "./components/clients";
+@import "./components/footer";
