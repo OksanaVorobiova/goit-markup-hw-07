@@ -281,12 +281,12 @@ summary {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.features-list__item, .navigation-list__item, .contact-list__item {
+.work-list__item, .features-list__item, .navigation-list__item, .contact-list__item {
   list-style-type: none;
   margin-bottom: 0;
 }
 
-.features-list, .navigation-list, .contact-list {
+.work-list, .features-list, .navigation-list, .contact-list {
   padding: 0;
   margin: 0;
 }
@@ -324,7 +324,7 @@ summary {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.features-section {
+.work-section, .features-section {
   margin: 0 0;
 }
 
@@ -550,4 +550,52 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.work-section {
+  padding-bottom: 94px;
+}
+
+.work-section__heading {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-div {
+  position: relative;
+}
+
+.work-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-description__paragraph {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
