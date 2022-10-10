@@ -16,7 +16,6 @@
 * {
    margin: 0;
    padding: 0;
-
 }
 
 body {
@@ -309,10 +308,9 @@ li {
  .portfolio-link {
    color: var(--primary-heading-color);
    text-decoration: none;
-
    transition-property: box-shadow;
    transition-duration: 250ms;
-   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .portfolio-link:hover,
@@ -423,7 +421,7 @@ li {
    justify-content: center;
  }
 
-.list.card-list {
+.card-list {
    display: flex;
    flex-wrap: wrap;
    margin-right: -30px;
