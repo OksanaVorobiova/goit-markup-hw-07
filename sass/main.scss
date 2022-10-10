@@ -1,72 +1,7 @@
 @import "./utils/normalize";
 @import "./utils/variables.scss";
 @import "./utils/placeholders";
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: $primaryColor;
-    color:$headingColor;
-    font-family: Roboto, sans-serif;
-}
-
-.image {
-    display: block;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
-.button {
-    display: block;
-    padding: 10px 32px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    border-radius: 4px;
-    background-color: $accentColor;
-    color: $primaryColor;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    cursor: pointer;
-    letter-spacing: 0.06em;
-    
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover, &:focus {
-            background-color: $buttonHoverFocus;
-            color: $primaryColor;
-        }
-}
-
-
-
+@import "./components/util-classes/basic";
 @import "./components/page-header";
 @import "./components/util-classes/logo";
 @import "./components/util-classes/navigation";
@@ -76,4 +11,5 @@ body {
 @import "./components/command-section";
 @import "./components/clients";
 @import "./components/footer";
-@import "./components/modal";
+@import "./components/util-classes/modal";
+@import "./components/filter-section";
