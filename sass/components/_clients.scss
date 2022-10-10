@@ -1,9 +1,9 @@
 .clients {
     @extend %section;
-}
 
-.clients__heading {
-    @extend %section-heading;
+    &__heading {
+        @extend %section-heading;
+    }
 }
 
 .client-list {
@@ -42,10 +42,12 @@
        & > &__use:focus {
         border-color: transparent;
        }
+
+           
+       &__logo {
+            fill: $socialIcons;
+            margin: 16px 32px;
+            @extend %transitionFill;
+        }
 }
 
-.client-link__logo {
-    fill: $socialIcons;
-    margin: 16px 32px;
-    @extend %transitionFill;
-}

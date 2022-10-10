@@ -3,10 +3,10 @@
     background-color: $secondaryButtonColor;
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.command-section__heading {
-    @extend %section-heading;
+        &__heading {
+            @extend %section-heading;
+        }
 }
 
 .command-list {
@@ -27,26 +27,29 @@
     text-align: center;
     padding-bottom: 30px;
     padding-top: 30px;
+
+        &__name {
+            margin-bottom: 10px;
+            margin-top: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+        }
+
+        &__paragraph {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--primary-paragraph-color);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+        }
 }
 
-.member-description__name {
-    margin-bottom: 10px;
-    margin-top: 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
 
-.member-description__paragraph {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--primary-paragraph-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
+
 
 .social-list {
    @extend %list;

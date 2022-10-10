@@ -11,24 +11,15 @@
     background-position: center;
     background-color: #c4c4c4;
     border: 1px solid #000000;
-}
 
-.hero-section__heading {
-    max-width: 696px;
-    margin: 0 auto 30px;
-    color: $primaryColor;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.button {
-    @extend %button;
-    
-        &:hover, &:focus {
-            background-color: $buttonHoverFocus;
+        &__heading {
+            max-width: 696px;
+            margin: 0 auto 30px;
             color: $primaryColor;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.4;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
         }
 }

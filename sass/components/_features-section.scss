@@ -7,7 +7,7 @@
 .features-list {
     @extend %list;
     display: flex;
-}
+ }
 
 .features-list__item {
     @extend %item;
@@ -25,10 +25,10 @@
     background-color: $secondaryButtonColor;
     border: none;
     border-radius: 4px;
-}
 
-.features-div__icon {
-    margin: 25px 100px;
+    &__icon {
+            margin: 25px 100px;
+        }
 }
 
 .features-list__heading {

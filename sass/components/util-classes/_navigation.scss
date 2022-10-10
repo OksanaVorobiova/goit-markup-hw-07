@@ -3,14 +3,15 @@
     align-items: flex-end;
     width: 573px;
     margin-left: 93px;
+
+        &-list {
+            @extend %list;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 344px;
+        }
 }
 
-.navigation-list {
-    @extend %list;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 344px; 
-}
 
 .navigation-list__item {
     @extend %item;

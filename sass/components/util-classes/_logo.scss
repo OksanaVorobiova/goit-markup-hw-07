@@ -15,16 +15,18 @@
         color: $primaryColor;
         letter-spacing: 0.03em;
     }
+
+    &-header {
+        box-sizing: border-box;
+        display: inline-block;
+        margin-top: 24px;
+        margin-bottom: 25px;
+    }
+
+    &-footer {
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
-.logo-header {
-    box-sizing: border-box;
-    display: inline-block;
-    margin-top: 24px;
-    margin-bottom: 25px;
-}
 
-.logo-footer {
-    display: block;
-    margin-bottom: 20px;
-}
