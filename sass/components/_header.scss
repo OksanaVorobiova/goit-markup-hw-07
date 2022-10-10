@@ -1,11 +1,9 @@
-@import "../utils/variables";
 .header {
     border-bottom: 1px solid #eee;
     margin-bottom: 0;
 }
 
 .container--flex {
-    @extend %container;
     display: flex;
     align-items: center;
 }
@@ -41,22 +39,24 @@
     line-height: 1.1;
     text-decoration: none;
     letter-spacing: 0.02em;
-    
+
     transition-property: fill, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover, &:focus {
-            color: $accentColor;
-        }
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 
-        &:hover .contact-list__icon, &:focus .contact-list__icon {
-            fill: $accentColor;
-        }
+    &:hover .contact-list__icon,
+    &:focus .contact-list__icon {
+        fill: $accentColor;
+    }
 }
 
 .contact-list__icon {
-    fill: red;
+    fill: $paragraphColor;
     margin-right: 10px;
     display: inline-block;
     transition-property: fill;
