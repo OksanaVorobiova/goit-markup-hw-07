@@ -2,9 +2,6 @@
     @extend %section;
     padding-bottom: 94px;
 
-    &__heading {
-        @extend %section-heading;
-    }
 }
 
 .work-list {
